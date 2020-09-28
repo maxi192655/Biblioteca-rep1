@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Libros</title>
+</head>
+
+<body>
+
+
+    
+<!------------------------------------Desplegable--------------------------------------------->
+    <div class="dropdown" id="info-user" style="display: none;">
+        <button id="user" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="ver-libro.html">Ver Libro</a>
+            <a class="dropdown-item" href="index.html">Index</a>
+            <a class="dropdown-item" href="Prestamos.html">Prestamos</a>
+            <a id="salir" class="dropdown-item">Salir</a>
+        </div>
+    </div>
+<!-------------------------------------------------------------------------------------------->
+
+
+
+    <h1>Estos son los libros disponibles en la biblioteca:</h1> <br>
+
+
+    <div id="filtro-rango-pag">
+
+        <p>Ordenar por:</p>
+
+        <button id="sortPagDesc">Pags Desc</button>
+
+        <button id="sortPagAsc">Pags Asc</button>
+
+        <button id="sortIdDesc">Id Desc</button><br><br>
+
+        <hr>
+
+        <p>Filtrar por Paginas:</p>
+
+        <input type="number" placeholder="min." id="rango-min"> <br><br>
+
+        <input type="number" placeholder="máx." id="rango-max"> <br><br>
+
+        <button id="filtrar">Filtrar</button>
+        <button id="limpiar">Limpiar</button><br><br>
+
+        <hr>
+
+        <p>O busca el libro que quieres:</p>
+
+        <input type="text" id="buscador"> <br><br>
+
+        <button id="limpBusc">Limpiar busqueda</button>
+
+
+
+    </div>
+
+    <br><br>
+
+    <div id="listado"></div>
+
+    <script src="scripts/init.js"></script>
+    <script src="scripts/libros.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

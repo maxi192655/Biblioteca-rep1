@@ -1,0 +1,16 @@
+{
+    "libros": [
+        {
+            "titulo": "Cuentos de amor de locura y de muerte",
+            "cantidad": 2,
+            "dias": 9,
+            "img": "img/1.jfif"
+        },
+		{
+            "titulo": "El pozo",
+            "cantidad": 1,
+            "dias": 12,
+            "img": "img/4.jfif"
+        }
+    ]
+}

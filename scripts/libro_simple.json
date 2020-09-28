@@ -1,0 +1,13 @@
+{
+    "titulo": "Cuentos de amor, de locura y de muerte",
+    "isbn": "ISBN - 902 - 3467",
+    "editorial": "Editorial A",
+    "paginas": "200",
+    "autor": "Horacio Quiroga",
+    "images": [
+        "img/1.jfif",
+        "img/2.jfif",
+        "img/3.jfif"
+    ],
+    "librosRelacionados": [2, 5]
+}

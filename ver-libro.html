@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!------------------------------------Desplegable--------------------------------------------->
+    <div class="dropdown" id="info-user" style="display: none;">
+        <button id="user" class="btn btn-primary dropdown-toggle" type="button" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="ver-libro.html">Ver Libro</a>
+            <a class="dropdown-item" href="index.html">Index</a>
+            <a class="dropdown-item" href="Prestamos.html">Prestamos</a>    
+            <a id="salir" class="dropdown-item">Salir</a>
+        </div>
+    </div>
+<!-------------------------------------------------------------------------------------------->
+    <h1>Info-Libro:</h1>
+
+
+
+
+    <div class="verLibro">
+        <div id="contenido"></div>
+        <hr>
+        <div id="imagenes" class="img"></div>
+        <hr>
+        <a href="index.html">Ver la lista de libros</a>
+        <hr>
+        <p>Quienes lo han leído opinan:</p>
+
+        <div id="comentarios"></div>
+
+        <div id="newCommentContent" style="display: none;">
+
+            <p>¿Lo leíste? Contanos que te pareció!</p>
+
+            <textarea id="newComm" rows="8" cols="55"></textarea>
+
+            <p>Calificalo:</p>
+
+            <select id="newCal">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <br><br>
+
+            <button id="enviarComm">Enviar</button>
+
+        </div>
+    </div> <br>
+    <div class="verLibro">
+        <p>Otro libros que te pueden interesar: </p>
+        <div id="relatedBooks"></div>
+    </div>
+
+    <script src="scripts/init.js"></script>
+    <script src="scripts/ver-libro.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "calificacion": 4,
+        "comentario": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "usuario": "fulana@mail.com",
+        "dateTime": "2020-1-17 12:22:13"
+    },
+    {
+        "calificacion": 3,
+        "comentario": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "usuario": "mengano@mail.com",
+        "dateTime": "2020-3-27 9:40:28"
+    },
+    {
+        "calificacion": 5,
+        "comentario": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "usuario": "sultano@mail.com",
+        "dateTime": "2020-6-20 16:32:8"
+    }
+]

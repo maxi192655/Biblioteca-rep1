@@ -1,0 +1,57 @@
+.signin, #listado, .verLibro {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+    background-color: beige;
+    border: 1px black solid; 
+}
+
+.prestamo,table, th, td {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+    background-color: rgb(7, 97, 124);
+    color: white;
+    border: 1px white solid; 
+}
+
+
+
+
+.invalid{
+  background-color: red;
+}
+
+.checked {
+  color: orange;
+}
+
+#filtro-rango-pag {
+  float: left;
+  padding: 15px;
+  background-color: rgb(220, 226, 245);
+  border: 1px black solid; 
+  margin-top: 40px;
+}
+
+#contenido {
+  text-align: center;
+}
+
+.fa {
+  text-align: right !important;
+}
+
+
+#info-user {
+  float: right;
+  padding: 15px;
+}
+
+.img {
+  margin: 23px;
+}
+
+

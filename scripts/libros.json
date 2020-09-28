@@ -1,0 +1,37 @@
+[
+    {
+        "titulo": "Cuentos de amor, de locura y de muerte",
+        "isbn": "ISBN - 902 - 3467",
+        "editorial": "Editorial A",
+        "paginas": "200",
+        "autor": "Horacio Quiroga"
+    },
+    {
+        "titulo": "La tregua",
+        "isbn": "ISBN - 902 - 9234",
+        "editorial": "Editorial B",
+        "paginas": "300",
+        "autor": "Mario Benedetti"
+    },
+    {
+        "titulo": "El pozo",
+        "isbn": "ISBN - 902 - 9245",
+        "editorial": "Editorial C",
+        "paginas": "250",
+        "autor": "Juan Carlos Onetti"
+    },
+    {
+        "titulo": "Pequeña ala",
+        "isbn": "ISBN - 902 - 3999",
+        "editorial": "Editorial B",
+        "paginas": "550",
+        "autor": "Roy Berocay"
+    },
+    {
+        "titulo": "Las venas abiertas de América Latina",
+        "isbn": "ISBN - 902 - 0932",
+        "editorial": "Editorial A",
+        "paginas": "400",
+        "autor": "Eduardo Galeano"
+    }
+]

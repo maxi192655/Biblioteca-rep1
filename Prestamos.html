@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prestamos</title>
+</head>
+
+<body>
+    <div class="dropdown" id="info-user" style="display: none;">
+        <button id="user" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="ver-libro.html">Ver Libro</a>
+            <a class="dropdown-item" href="index.html">Index</a>
+            <a class="dropdown-item" href="Prestamos.html">Prestamos</a>
+            <a id="salir" class="dropdown-item">Salir</a>
+        </div>
+    </div>
+
+    <h1>Prestamos:</h1>
+
+    <div id="prestamos">
+        <table >
+            <tbody id="listado">
+                <tr>
+                    <th></th>
+                    <th>Titulo</th>
+                    <th>Dias estimados</th>
+                    <th>Cantidad</th>
+                    <th>Dias</th>
+                </tr>
+            </tbody>
+            <tr>
+                <th>Cantidad de dias prestados</th>
+                <td id="total"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="scripts/init.js"></script>
+    <script src="scripts/Prestamo.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

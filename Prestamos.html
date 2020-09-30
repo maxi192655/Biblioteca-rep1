@@ -28,9 +28,9 @@
 
     <h1>Prestamos:</h1>
 
-    <div id="prestamos">
+    <div class = "prestamo">
         <table >
-            <tbody id="listado">
+            <thead>
                 <tr>
                     <th></th>
                     <th>Titulo</th>
@@ -38,11 +38,14 @@
                     <th>Cantidad</th>
                     <th>Dias</th>
                 </tr>
-            </tbody>
-            <tr>
-                <th>Cantidad de dias prestados</th>
-                <td id="total"></td>
-            </tr>
+            </thead>
+            <tbody id="listado"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Cantidad de dias del prestamo:</td>
+                    <td id="total"></td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 

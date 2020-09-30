@@ -13,7 +13,7 @@ function calcSubtotal(dias, i) {
     let cantidad = parseInt(document.getElementById(`cantidad${i}`).value);
     subtotal = cantidad * dias;
     document.getElementById(`libroSubtotal${i}`).innerHTML = subtotal;
-    calctotal()
+    calctotal();
 }
 
 function librosPrestados(array) {
@@ -26,12 +26,16 @@ function librosPrestados(array) {
 
         contenido += `
             <tr>
-                <td><img src='${libro.img}'></td>
+                <td><img src='${libro.img}' width="50px"></td>
+
                 <td>${libro.titulo}</td>
+                
                 <td>${libro.dias}</td>
+                
                 <td><input style="width:60px;" onchange="calcSubtotal(${libro.dias}, ${i})" 
-                type="number" id="cantidad${i}" value="${libro.cantidad}" min="1"></td>
-                <td><span id="libroSubtotal${i}" style="font-weight:blod;">${sub}</td>
+                    type="number" id="cantidad${i}" value="${libro.cantidad}" min="1"></td>
+                
+                <td><span class="subtotal" id="libroSubtotal${i}" style="font-weight:blod;">${sub}</td>
             </tr>
         `
     }
@@ -44,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
             prestamosArray = resultObj.data.libros;
             
             librosPrestados(prestamosArray)
+            
         }
     });
 });

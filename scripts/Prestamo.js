@@ -1,15 +1,16 @@
 var prestamosArray = []
 
 function calctotal(){
-    let subs = document.getElementsByClassName("subtotal")
     let suma = 0;
+    let subs = document.getElementsByClassName("subtotal")
     for (let i = 0; i < subs.length; i++) {
         suma += parseInt(subs[i].innerHTML)
     }
-    document.getElementById("total").innerText += suma;
+    document.getElementById("total").innerHTML = suma;
 }
 
 function calcSubtotal(dias, i) {
+   
     let cantidad = parseInt(document.getElementById(`cantidad${i}`).value);
     subtotal = cantidad * dias;
     document.getElementById(`libroSubtotal${i}`).innerHTML = subtotal;
@@ -40,6 +41,7 @@ function librosPrestados(array) {
         `
     }
     document.getElementById("listado").innerHTML += contenido;
+    calctotal()
 }
 
 document.addEventListener("DOMContentLoaded", function (e) {
